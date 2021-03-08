@@ -24,13 +24,24 @@ Date       || Credit  || Debit  || Balance
 ## User stories
 
 ```
+As a customer
+So that I can see how much money I have in my account
+I would like to be able to check my balance
+
+```
+
 As a Customer
 So that I can keep my money safe
 I would like to desposit money into my account
+
 ```
 
 ```
+
 As a Customer
 So that I can spend my money
 I would like to withdraw money from my account
+
+```
+
 ```
