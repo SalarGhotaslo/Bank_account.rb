@@ -33,4 +33,5 @@ describe 'Account' do
     account.withdraw(500)
     expect(account.transactions.length).to eq 2
   end
+  
 end
