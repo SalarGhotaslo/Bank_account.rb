@@ -20,9 +20,12 @@ class Account
     @balance -= amount
     withdraw_transaction = Transaction.new(balance: @balance, debit: amount)
     @transactions.unshift(withdraw_transaction)
-    if @balance < amount
-      raise 'Insufficient funds, please select a different amount'
+      raise 'Insufficient funds, please select a different amount' if @balance < amount
      end
+ 
+    def statement
+        statement = Statement.new
+        per_transaction = @transactions.map(&:display)
+        statement.print_statement(per_transaction)
     end
-    
 end
