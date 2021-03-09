@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-require 'account'
-require 'transaction'
+require './lib/account'
+require './lib/transaction'
 
 describe 'Account' do
   subject(:account) { Account.new }
