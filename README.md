@@ -2,8 +2,6 @@
 
 This is a practise tech test on week 10 of Makers course. This is to practise OO design and TDD skills.
 
-Acceptance criteria:
-
 ## Client requirements:
 
 ```
@@ -14,13 +12,7 @@ When she prints her bank statement
 Then she would see
 ```
 
-## My approach and explanation of classes:
-
-- The Account Class is the main class where you can deposit, withdraw and view statements.
-
-- The Statement Class is to print out the statement
-
-- The Transaction Class is the display
+## Example of how it should be displayed
 
 ```
 Date       || Credit  || Debit  || Balance
@@ -28,6 +20,19 @@ Date       || Credit  || Debit  || Balance
 13/01/2012 || 2000.00 ||        || 3000.00
 10/01/2012 || 1000.00 ||        || 1000.00
 ```
+
+## My approach and explanation of classes:
+
+- The Account Class is the main class where you can deposit, withdraw and view statements.
+
+- The Statement Class is to print out the statement
+
+- The Transaction Class is the display
+
+## How to run the programme
+
+- Run bundle install
+- irb -r './lib/account.rb'
 
 ## User stories
 
@@ -61,6 +66,8 @@ So that I don't spend more than I have
 I would like to receive an error message when I try to withdraw an amount greater than my current balance
 ```
 
+```
 As a customer
 So that I can see how much and when I withdrew/deposited money
 I would like to see a full transcation statement
+```

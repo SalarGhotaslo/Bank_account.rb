@@ -1,13 +1,14 @@
+# frozen_string_literal: true
+
 class Statement
-    attr_reader :header
+  attr_reader :header
 
-    def initialize
-      @header = 'date || credit || debit || balance'
+  def initialize
+    @header = 'date || credit || debit || balance'
+  end
+
+  def print_statement(transaction)
+    puts @header
+    puts transaction.join("\n")
     end
-
-    def print_statement(transaction)
-        puts @header
-        puts transaction.join("\n")
-      end
-
 end
