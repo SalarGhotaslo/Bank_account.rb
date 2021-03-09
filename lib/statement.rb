@@ -1,12 +1,12 @@
 class Statement
-    attr_reader :display
+    attr_reader :header
 
     def initialize
-      @display = 'date || credit || debit || balance'
+      @header = 'date || credit || debit || balance'
     end
 
     def print_statement(transaction)
-        puts @display
+        puts @header
         puts transaction.join("\n")
       end
 
