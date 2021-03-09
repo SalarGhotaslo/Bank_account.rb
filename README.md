@@ -45,3 +45,13 @@ I would like to withdraw money from my account
 ```
 
 ```
+
+As a customer
+So that I have clear visibility of my transactions
+I would like to be able to see when I deposited or withdrew money from my account
+
+```
+As a customer
+So that I don't spend more than I have
+I would like to receive an error message when I try to withdraw an amount greater than my current balance
+```
