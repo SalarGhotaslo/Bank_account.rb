@@ -21,4 +21,11 @@ describe 'Account' do
     account.deposit(1000)
     expect { account.withdraw(1001) }.to raise_error('Insufficient funds, please select a different amount')
   end
+  it 'stores user deposit into transaction array' do
+    account.deposit(100)
+    expect(account.transactions.first).to be_an_instance_of Transaction
+  end
+  it 'initializes with a empty transactions array' do
+    expect(account.transactions).to eq []
+  end
 end
