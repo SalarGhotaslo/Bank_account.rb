@@ -21,5 +21,9 @@ describe Transaction do
     transaction = Transaction.new(balance: 100, credit: 200, debit: 300, date: Time.now.strftime('%d/%m/%Y'))
     expect(transaction.date).to eq Time.now.strftime('%d/%m/%Y')
   end
+  it 'displays a transaction' do
+    transaction = Transaction.new(date: Time.now.strftime('%d/%m/%Y'), credit: 200, debit: 300, balance: 300)
+    expect(transaction.display).to eq "#{Time.now.strftime('%d/%m/%Y')} || 200 || 300 || 300"
+  end
     
 end
