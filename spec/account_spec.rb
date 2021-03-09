@@ -28,4 +28,9 @@ describe 'Account' do
   it 'initializes with a empty transactions array' do
     expect(account.transactions).to eq []
   end
+  it 'stores each transaction in transactions array' do
+    account.deposit(1000)
+    account.withdraw(500)
+    expect(account.transactions.length).to eq 2
+  end
 end
